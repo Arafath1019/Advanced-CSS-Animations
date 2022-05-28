@@ -16,10 +16,14 @@ body {
    width: 450px;
    height: 300px;
    position: relative;
+   background-color: #444;
+   border: 10px solid white;
 }
 
 .container img {
    width: 100%;
+   transition: all 0.5s;
+   transition-delay: 0.5s;
 }
 
 .container:before {
@@ -29,8 +33,10 @@ body {
   height: 100%;
   width: 100%;
   content: '';
-  background-color: #2d3436;
   opacity: 0.8;
+  background-color: #006266;
+  transform: scale(0) rotate(-180deg);
+  transition: all 0.5s;
 }
 
 .caption {
@@ -44,6 +50,14 @@ body {
    justify-content: space-around;
    color: white;
    text-transform: uppercase;
+}
+
+
+h2,
+p,
+a {
+  opacity: 0;
+  transition: all 0.5s;
 }
 
 h2 {
@@ -72,38 +86,18 @@ a {
  }
 
 /* EFFECTS STYLES GOES HERE */
-.container {
-  background-color: #444;
-  border: 10px solid white;
-}
-
-img {
-  transition: all 0.5s;
-  transition-delay: 0.5s;
-}
 
 .container:hover img {
   transform: scale(0);
   transition-delay: 0s;
 }
 
-.container:before {
-  background-color: #006266;
-  transform: scale(0) rotate(-180deg);
-  transition: all 0.5s;
-}
 
 .container:hover:before {
   transform: scale(1) rotate(0deg);
   transition-delay: 0.5s;
 }
 
-h2,
-p,
-a {
-  opacity: 0;
-  transition: all 0.5s;
-}
 
 .container:hover h2,
 .container:hover p,
