@@ -10,7 +10,6 @@ body {
 .btn {
   border: 2px solid tomato;
   background:none;
-  color: tomato;
   padding: 20px 40px;
   font-size: 25px;
   text-transform: uppercase;

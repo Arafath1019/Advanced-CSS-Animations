@@ -23,15 +23,14 @@ a::before{
 	left: 0;
 	top: 0;
 	height: 100%;
-	width: 100%;
+	width: 0%;
 	background-color: #351435;
 	z-index: -1;
-	transform: translateX(-100%);
 	transition: all 1s;
 }
 
 a:hover::before{
-	transform: translateX(0);
+	width: 100%;
 }
 
 a:hover{
